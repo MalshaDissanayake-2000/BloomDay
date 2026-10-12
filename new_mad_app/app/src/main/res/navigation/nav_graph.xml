@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bloomday.ui.home.HomeFragment"
+        android:label="Home" />
+
+
+    <fragment
+        android:id="@+id/habitsFragment"
+        android:name="com.example.bloomday.ui.habits.HabitsFragment"
+        android:label="Habits" />
+
+
+    <fragment
+        android:id="@+id/moodFragment"
+        android:name="com.example.bloomday.ui.mood.MoodFragment"
+        android:label="Mood" />
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.bloomday.ui.profile.ProfileFragment"
+        android:label="Profile" />
+
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.bloomday.ui.calendar.CalendarFragment"
+        android:label="Calendar" />
+
+
+</navigation>

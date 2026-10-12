@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginHorizontal="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Toggle -->
+        <ToggleButton
+            android:id="@+id/toggleDone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textOn="✓"
+            android:textOff="○"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg_circle_toggle"
+            android:textColor="@android:color/white"/>
+
+        <!-- Title + Notes -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHabitTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Habit name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#222"/>
+
+            <TextView
+                android:id="@+id/tvHabitNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Optional notes"
+                android:textSize="13sp"
+                android:textColor="#666"/>
+        </LinearLayout>
+
+        <!-- Status Dot -->
+        <View
+            android:id="@+id/imgDot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/circle_green"
+            android:visibility="gone"/>
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_edit"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Edit"
+            app:tint="?android:attr/textColorSecondary" />
+
+        <!-- Delete Button -->
+        <TextView
+            android:id="@+id/btnDeleteMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗑️"
+            android:textSize="22sp"
+            android:padding="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Delete"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
